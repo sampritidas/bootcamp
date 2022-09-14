@@ -3,8 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="acdf57b8-e803-4f89-b28c-eb9d269acb88" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/step/rectangle/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/rectangle/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/step/square/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/square/Square.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/step/rectangle/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/assignment1/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/step/rectangle/RectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/step/assignment1/RectangleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +46,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
+    "last_directory_selection": "/Users/homefolder/workspace/java/practice/bootcamp/test/com/step",
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font"
   }
 }]]></component>
@@ -62,7 +63,7 @@
       <recent name="com.step.rectangle" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in bootcamp">
+  <component name="RunManager" selected="JUnit.RectangleTest.perimeterOfSquare">
     <configuration name="All in bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <option name="PACKAGE_NAME" value="" />
@@ -71,32 +72,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RectangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RectangleTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.step.rectangle.*" />
+          <option name="PATTERN" value="com.step.assignment1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.step.rectangle" />
-      <option name="MAIN_CLASS_NAME" value="com.step.rectangle.RectangleTest" />
+      <option name="PACKAGE_NAME" value="com.step.assignment1" />
+      <option name="MAIN_CLASS_NAME" value="com.step.assignment1.RectangleTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RectangleTest.perimeterOfRectangle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RectangleTest.perimeterOfSquare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.step.rectangle.*" />
+          <option name="PATTERN" value="com.step.assignment1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.step.rectangle" />
-      <option name="MAIN_CLASS_NAME" value="com.step.rectangle.RectangleTest" />
-      <option name="METHOD_NAME" value="perimeterOfRectangle" />
+      <option name="PACKAGE_NAME" value="com.step.assignment1" />
+      <option name="MAIN_CLASS_NAME" value="com.step.assignment1.RectangleTest" />
+      <option name="METHOD_NAME" value="perimeterOfSquare" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -136,11 +137,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RectangleTest.perimeterOfSquare" />
+        <item itemvalue="JUnit.RectangleTest (1)" />
         <item itemvalue="JUnit.All in bootcamp" />
         <item itemvalue="JUnit.SquareTest.perimeterOfSquare" />
         <item itemvalue="JUnit.SquareTest.areaOfSquare" />
-        <item itemvalue="JUnit.RectangleTest.perimeterOfRectangle" />
-        <item itemvalue="JUnit.RectangleTest" />
       </list>
     </recent_temporary>
   </component>
