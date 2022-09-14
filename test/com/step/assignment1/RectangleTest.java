@@ -10,6 +10,7 @@ public class RectangleTest {
         final Rectangle rectangle = Rectangle.createRectangle(5L, 10L);
         assertEquals(50, rectangle.area(), 0.1);
     }
+    
 
     @Test
     public void perimeterOfRectangle() {

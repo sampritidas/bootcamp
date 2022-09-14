@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acdf57b8-e803-4f89-b28c-eb9d269acb88" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/step/assignment2/Coin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/step/assignment2/CoinTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/step/rectangle/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/assignment1/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/step/rectangle/RectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/step/assignment1/RectangleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootcamp.iml" beforeDir="false" afterPath="$PROJECT_DIR$/bootcamp.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hamcrest-core-1.3-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hamcrest-core-1.3-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/hamcrest-core-1.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/junit-4.13.1-javadoc.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/junit-4.13.1-sources.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/junit-4.13.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/step/assignment1/RectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/step/assignment1/RectangleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +54,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "last_directory_selection": "/Users/homefolder/workspace/java/practice/bootcamp/test/com/step",
+    "last_directory_selection": "/Users/homefolder/workspace/java/practice/bootcamp/src/com/step",
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font"
   }
 }]]></component>
@@ -59,15 +67,47 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.step.assignment2" />
       <recent name="com.step.square" />
       <recent name="com.step.rectangle" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RectangleTest.perimeterOfSquare">
+  <component name="RunManager" selected="JUnit.CoinTest">
     <configuration name="All in bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <option name="PACKAGE_NAME" value="" />
       <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CoinTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.step.assignment2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.step.assignment2" />
+      <option name="MAIN_CLASS_NAME" value="com.step.assignment2.CoinTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CoinTest.testChanceToGetTail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.step.assignment2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.step.assignment2" />
+      <option name="MAIN_CLASS_NAME" value="com.step.assignment2.CoinTest" />
+      <option name="METHOD_NAME" value="testChanceToGetTail" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -103,45 +143,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SquareTest.areaOfSquare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.step.square.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.step.square" />
-      <option name="MAIN_CLASS_NAME" value="com.step.square.SquareTest" />
-      <option name="METHOD_NAME" value="areaOfSquare" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SquareTest.perimeterOfSquare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.step.square.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.step.square" />
-      <option name="MAIN_CLASS_NAME" value="com.step.square.SquareTest" />
-      <option name="METHOD_NAME" value="perimeterOfSquare" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CoinTest" />
+        <item itemvalue="JUnit.CoinTest.testChanceToGetTail" />
         <item itemvalue="JUnit.RectangleTest.perimeterOfSquare" />
         <item itemvalue="JUnit.RectangleTest (1)" />
         <item itemvalue="JUnit.All in bootcamp" />
-        <item itemvalue="JUnit.SquareTest.perimeterOfSquare" />
-        <item itemvalue="JUnit.SquareTest.areaOfSquare" />
       </list>
     </recent_temporary>
   </component>
