@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acdf57b8-e803-4f89-b28c-eb9d269acb88" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/step/square/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/step/square/SquareTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/step/rectangle/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/rectangle/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/step/rectangle/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/rectangle/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/step/rectangle/RectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/step/rectangle/RectangleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/step/square/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/square/Square.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +62,15 @@
       <recent name="com.step.rectangle" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SquareTest.perimeterOfSquare">
+  <component name="RunManager" selected="JUnit.All in bootcamp">
+    <configuration name="All in bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RectangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
@@ -77,22 +82,6 @@
       <option name="PACKAGE_NAME" value="com.step.rectangle" />
       <option name="MAIN_CLASS_NAME" value="com.step.rectangle.RectangleTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RectangleTest.areaOfRectangle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.step.rectangle.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.step.rectangle" />
-      <option name="MAIN_CLASS_NAME" value="com.step.rectangle.RectangleTest" />
-      <option name="METHOD_NAME" value="areaOfRectangle" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -147,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in bootcamp" />
         <item itemvalue="JUnit.SquareTest.perimeterOfSquare" />
         <item itemvalue="JUnit.SquareTest.areaOfSquare" />
         <item itemvalue="JUnit.RectangleTest.perimeterOfRectangle" />
         <item itemvalue="JUnit.RectangleTest" />
-        <item itemvalue="JUnit.RectangleTest.areaOfRectangle" />
       </list>
     </recent_temporary>
   </component>

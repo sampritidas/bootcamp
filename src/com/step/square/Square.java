@@ -1,7 +1,5 @@
 package com.step.square;
 
-import com.step.rectangle.Rectangle;
-
 public class Square {
     private final double side;
 
@@ -10,12 +8,10 @@ public class Square {
     }
 
     public double area() {
-        final Rectangle rectangle = new Rectangle(side, side);
-        return rectangle.area();
+        return side * side;
     }
 
     public double perimeter() {
-        final Rectangle rectangle = new Rectangle(side, side);
-        return rectangle.perimeter();
+        return 4 * side;
     }
 }
