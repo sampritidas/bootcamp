@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acdf57b8-e803-4f89-b28c-eb9d269acb88" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/step/square/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/step/square/SquareTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/step/rectangle/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/rectangle/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/step/rectangle/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/rectangle/Rectangle.java" afterDir="false" />
@@ -48,34 +49,23 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit4",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4": "",
-    "settings.editor.selected.configurable": "actions.on.save"
+    "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Color Scheme Font"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.step.square" />
       <recent name="com.step.rectangle" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.step.square" />
       <recent name="com.step.rectangle" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RectangleTest.areaOfRectangle">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.step.rectangle.Main" />
-      <module name="bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.step.rectangle.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.SquareTest.perimeterOfSquare">
     <configuration name="RectangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
@@ -123,12 +113,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SquareTest.areaOfSquare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.step.square.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.step.square" />
+      <option name="MAIN_CLASS_NAME" value="com.step.square.SquareTest" />
+      <option name="METHOD_NAME" value="areaOfSquare" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SquareTest.perimeterOfSquare" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.step.square.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.step.square" />
+      <option name="MAIN_CLASS_NAME" value="com.step.square.SquareTest" />
+      <option name="METHOD_NAME" value="perimeterOfSquare" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RectangleTest.areaOfRectangle" />
-        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.SquareTest.perimeterOfSquare" />
+        <item itemvalue="JUnit.SquareTest.areaOfSquare" />
         <item itemvalue="JUnit.RectangleTest.perimeterOfRectangle" />
         <item itemvalue="JUnit.RectangleTest" />
+        <item itemvalue="JUnit.RectangleTest.areaOfRectangle" />
       </list>
     </recent_temporary>
   </component>

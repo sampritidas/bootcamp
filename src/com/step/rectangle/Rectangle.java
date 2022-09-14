@@ -1,19 +1,19 @@
 package com.step.rectangle;
 
 public class Rectangle {
-    private final int width;
-    private final int height;
+    private final double width;
+    private final double height;
 
-    public  Rectangle(int width, int height){
+    public Rectangle(double width, double height) {
         this.width = width;
         this.height = height;
     }
 
-    public  int area(){
-        return  width * height;
+    public double area() {
+        return width * height;
     }
 
-    public int perimeter(){
+    public double perimeter() {
         return 2 * (width + height);
     }
 
