@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acdf57b8-e803-4f89-b28c-eb9d269acb88" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/step/assignment2/Chance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/step/assignment2/ChanceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/step/assignment2/exceptions/InvalidChanceException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/step/assignment2/Coin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/com/step/assignment2/CoinTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/step/assignment2/Chance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/assignment2/Chance.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/step/assignment2/ChanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/step/assignment2/ChanceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +15,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -54,6 +53,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.step.assignment2.exceptions" />
       <recent name="com.step.square" />
       <recent name="com.step.rectangle" />
     </key>
@@ -66,7 +66,7 @@
       <recent name="com.step.rectangle" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in bootcamp">
+  <component name="RunManager" selected="JUnit.ChanceTest">
     <configuration name="All in bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <option name="PACKAGE_NAME" value="" />
@@ -106,7 +106,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChanceTest.multiply" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChanceTest.shouldReturnOrOfTwoChances" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -116,13 +116,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.step.assignment2" />
       <option name="MAIN_CLASS_NAME" value="com.step.assignment2.ChanceTest" />
-      <option name="METHOD_NAME" value="multiply" />
+      <option name="METHOD_NAME" value="shouldReturnOrOfTwoChances" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChanceTest.notChance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChanceTest.shouldThrowInvalidChanceExceptionWhenChanceIsInvalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -132,7 +132,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.step.assignment2" />
       <option name="MAIN_CLASS_NAME" value="com.step.assignment2.ChanceTest" />
-      <option name="METHOD_NAME" value="notChance" />
+      <option name="METHOD_NAME" value="shouldThrowInvalidChanceExceptionWhenChanceIsInvalid" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -140,11 +140,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in bootcamp" />
         <item itemvalue="JUnit.ChanceTest" />
+        <item itemvalue="JUnit.ChanceTest.shouldReturnOrOfTwoChances" />
+        <item itemvalue="JUnit.ChanceTest.shouldThrowInvalidChanceExceptionWhenChanceIsInvalid" />
+        <item itemvalue="JUnit.All in bootcamp" />
         <item itemvalue="JUnit.ChanceTest.atLeastOne" />
-        <item itemvalue="JUnit.ChanceTest.multiply" />
-        <item itemvalue="JUnit.ChanceTest.notChance" />
       </list>
     </recent_temporary>
   </component>

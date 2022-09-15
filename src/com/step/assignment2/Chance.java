@@ -1,26 +1,35 @@
 package com.step.assignment2;
 
+import com.step.assignment2.exceptions.InvalidChanceException;
+
 import java.util.Objects;
 
 public class Chance {
     private double chance;
 
-    public Chance(double chance) {
+    private Chance(double chance) {
         this.chance = chance;
     }
 
-    public Chance not() {
-        return new Chance(1 - chance);
+    public static Chance createChance(double chance) throws InvalidChanceException {
+        if (chance < 0 || chance > 1) {
+            throw new InvalidChanceException(chance);
+        }
+        return new Chance(chance);
     }
 
-    public Chance multiply(Chance multiplier) {
-        return new Chance(chance * multiplier.chance);
+    public Chance not() throws InvalidChanceException {
+        return createChance(1 - chance);
     }
 
-    public Chance atLeastOne(Chance anotherChance) {
+    public Chance and(Chance anotherChance) throws InvalidChanceException {
+        return createChance(chance * anotherChance.chance);
+    }
+
+    public Chance or(Chance anotherChance) throws InvalidChanceException {
         Chance notOfAnotherChance = anotherChance.not();
-        Chance atMost = notOfAnotherChance.multiply(notOfAnotherChance);
-
+        Chance atMost = this.not().and(notOfAnotherChance);
+        
         return atMost.not();
     }
 
@@ -35,5 +44,10 @@ public class Chance {
     @Override
     public int hashCode() {
         return Objects.hash(chance);
+    }
+
+    public boolean isWithinDelta(Chance anotherChance, double delta) {
+        double actualDelta = this.chance - anotherChance.chance;
+        return Math.abs(actualDelta) <= delta;
     }
 }
