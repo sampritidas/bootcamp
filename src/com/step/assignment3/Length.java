@@ -1,5 +1,7 @@
 package com.step.assignment3;
 
+import com.step.assignment3.exceptions.IncompatibleUnitExceptions;
+
 import java.util.Objects;
 
 public class Length {
@@ -33,8 +35,7 @@ public class Length {
         Length convertedNewLength = newLength.convertToMm();
         return this.convertToMm().equals(convertedNewLength);
     }
-
-
+    
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -46,5 +47,12 @@ public class Length {
     @Override
     public int hashCode() {
         return Objects.hash(number, unit);
+    }
+
+    public Length add(Length newLength) throws IncompatibleUnitExceptions {
+        if (unit != newLength.unit) {
+            throw new IncompatibleUnitExceptions(newLength.unit);
+        }
+        return new Length(number + newLength.number, unit);
     }
 }
