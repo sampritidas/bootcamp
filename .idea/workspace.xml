@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acdf57b8-e803-4f89-b28c-eb9d269acb88" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/step/assignment3/Length.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/step/assignment3/LengthTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/step/assignment2/Chance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/assignment2/Chance.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +14,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -60,12 +60,13 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.step.assignment3" />
       <recent name="com.step.assignment2" />
       <recent name="com.step.square" />
       <recent name="com.step.rectangle" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ChanceTest">
+  <component name="RunManager" selected="JUnit.LengthTest.compareOfFeetAndInches">
     <configuration name="All in bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <option name="PACKAGE_NAME" value="" />
@@ -85,22 +86,6 @@
       <option name="PACKAGE_NAME" value="com.step.assignment2" />
       <option name="MAIN_CLASS_NAME" value="com.step.assignment2.ChanceTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ChanceTest.atLeastOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.step.assignment2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.step.assignment2" />
-      <option name="MAIN_CLASS_NAME" value="com.step.assignment2.ChanceTest" />
-      <option name="METHOD_NAME" value="atLeastOne" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -137,13 +122,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LengthTest.compareOfFeetAndInches" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.step.assignment3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.step.assignment3" />
+      <option name="MAIN_CLASS_NAME" value="com.step.assignment3.LengthTest" />
+      <option name="METHOD_NAME" value="compareOfFeetAndInches" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.LengthTest.compareOfFeetAndInches" />
         <item itemvalue="JUnit.ChanceTest" />
         <item itemvalue="JUnit.ChanceTest.shouldReturnOrOfTwoChances" />
         <item itemvalue="JUnit.ChanceTest.shouldThrowInvalidChanceExceptionWhenChanceIsInvalid" />
         <item itemvalue="JUnit.All in bootcamp" />
-        <item itemvalue="JUnit.ChanceTest.atLeastOne" />
       </list>
     </recent_temporary>
   </component>
