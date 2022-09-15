@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acdf57b8-e803-4f89-b28c-eb9d269acb88" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/step/assignment3/Length.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/com/step/assignment3/LengthTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/step/assignment3/LengthUnit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/step/assignment3/Volume.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/step/assignment3/VolumeUnit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/step/assignment3/VolumeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/step/assignment3/Length.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/assignment3/Length.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/step/assignment3/LengthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/step/assignment3/LengthTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +19,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
         <option value="JUnit4 Test Class" />
       </list>
     </option>
@@ -52,6 +57,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.step.assignment3" />
       <recent name="com.step.assignment2.exceptions" />
       <recent name="com.step.square" />
       <recent name="com.step.rectangle" />
@@ -66,15 +72,7 @@
       <recent name="com.step.rectangle" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LengthTest.compareOfFeetAndInches">
-    <configuration name="All in bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bootcamp" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.VolumeTest.compareLitreToGallon">
     <configuration name="ChanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
@@ -106,18 +104,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChanceTest.shouldThrowInvalidChanceExceptionWhenChanceIsInvalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LengthTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.step.assignment2.*" />
+          <option name="PATTERN" value="com.step.assignment3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.step.assignment2" />
-      <option name="MAIN_CLASS_NAME" value="com.step.assignment2.ChanceTest" />
-      <option name="METHOD_NAME" value="shouldThrowInvalidChanceExceptionWhenChanceIsInvalid" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.step.assignment3" />
+      <option name="MAIN_CLASS_NAME" value="com.step.assignment3.LengthTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -138,13 +135,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VolumeTest.compareLitreToGallon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.step.assignment3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.step.assignment3" />
+      <option name="MAIN_CLASS_NAME" value="com.step.assignment3.VolumeTest" />
+      <option name="METHOD_NAME" value="compareLitreToGallon" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.VolumeTest.compareLitreToGallon" />
+        <item itemvalue="JUnit.LengthTest" />
         <item itemvalue="JUnit.LengthTest.compareOfFeetAndInches" />
         <item itemvalue="JUnit.ChanceTest" />
         <item itemvalue="JUnit.ChanceTest.shouldReturnOrOfTwoChances" />
-        <item itemvalue="JUnit.ChanceTest.shouldThrowInvalidChanceExceptionWhenChanceIsInvalid" />
-        <item itemvalue="JUnit.All in bootcamp" />
       </list>
     </recent_temporary>
   </component>

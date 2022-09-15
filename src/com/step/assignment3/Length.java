@@ -4,28 +4,36 @@ import java.util.Objects;
 
 public class Length {
     private final double number;
-    private final String unit;
+    private final LengthUnit unit;
 
-    public Length(double number, String unit) {
+    public Length(double number, LengthUnit unit) {
         this.number = number;
         this.unit = unit;
     }
 
-    public Length convertFeetToInch(Length newLength) {
-        return new Length(newLength.number * 12, "inch");
+    public Length convertToMm() {
+        double value = measurementInMM(this.unit) * this.number;
+        return new Length(value, LengthUnit.MM);
     }
 
-    public Length covertInchToCm(Length newLength) {
-        return new Length(newLength.number * 2.5, "cm");
+    private static int measurementInMM(LengthUnit unit) {
+        switch (unit) {
+            case FEET:
+                return 300;
+            case INCH:
+                return 25;
+            case CM:
+                return 10;
+            default:
+                return 1;
+        }
     }
 
-    public Length convertCmToMm(Length newLength) {
-        return new Length(newLength.number * 10, "mm");
+    public boolean compare(Length newLength) {
+        Length convertedNewLength = newLength.convertToMm();
+        return this.convertToMm().equals(convertedNewLength);
     }
 
-//    public boolean compare(Length newLength) {
-//
-//    }
 
     @Override
     public boolean equals(Object o) {
