@@ -5,14 +5,17 @@ import com.step.assignment2.exceptions.InvalidChanceException;
 import java.util.Objects;
 
 public class Chance {
+    public static final int IMPOSSIBILITY = 0;
+    public static final int CERTAINTY = 1;
     private double chance;
+
 
     private Chance(double chance) {
         this.chance = chance;
     }
 
     public static Chance createChance(double chance) throws InvalidChanceException {
-        if (chance < 0 || chance > 1) {
+        if (chance < IMPOSSIBILITY || chance > CERTAINTY) {
             throw new InvalidChanceException(chance);
         }
         return new Chance(chance);
@@ -29,7 +32,7 @@ public class Chance {
     public Chance or(Chance anotherChance) throws InvalidChanceException {
         Chance notOfAnotherChance = anotherChance.not();
         Chance atMost = this.not().and(notOfAnotherChance);
-        
+
         return atMost.not();
     }
 
