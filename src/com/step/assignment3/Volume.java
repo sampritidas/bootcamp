@@ -12,22 +12,13 @@ public class Volume {
     }
 
     public Volume convertToLitre() {
-        double value = measurementInLitre(this.unit) * this.value;
-        return new Volume(value, VolumeUnit.LITER);
-    }
-
-    private double measurementInLitre(VolumeUnit unit) {
-        switch (unit) {
-            case GALLON:
-                return 3.78;
-            default:
-                return 1;
-        }
+        double newValue = unit.litre * value;
+        return new Volume(newValue, VolumeUnit.LITER);
     }
 
     public boolean compare(Volume newVolume) {
         Volume convertedVolumeInLitre = newVolume.convertToLitre();
-        return this.convertToLitre().equals(convertedVolumeInLitre);
+        return convertToLitre().equals(convertedVolumeInLitre);
     }
 
     @Override
@@ -41,5 +32,17 @@ public class Volume {
     @Override
     public int hashCode() {
         return Objects.hash(value, unit);
+    }
+
+    public Volume add(Volume newVolume) {
+        Volume newVolumeInLitre = newVolume.convertToLitre();
+        Volume thisInLitre = this.convertToLitre();
+
+        return new Volume(thisInLitre.value + newVolumeInLitre.value, VolumeUnit.LITER);
+    }
+
+    public boolean isWithinDelta(Volume anotherChance, double delta) {
+        double actualDelta = this.value - anotherChance.value;
+        return Math.abs(actualDelta) <= delta;
     }
 }

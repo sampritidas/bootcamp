@@ -43,8 +43,9 @@ public class LengthTest {
     @Test
     public void throwExceptionInAddWhenUnitsAreDifferent() throws IncompatibleUnitExceptions {
         final Length length1 = new Length(2, LengthUnit.INCH);
-        final Length length2 = new Length(2, LengthUnit.CM);
+        final Length length2 = new Length(2.5, LengthUnit.CM);
 
-        assertThrows(IncompatibleUnitExceptions.class, () -> length1.add(length2));
+        Length newAddedLength = length1.add(length2);
+        assertTrue(newAddedLength.equals(new Length(3, LengthUnit.INCH)));
     }
 }

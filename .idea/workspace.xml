@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acdf57b8-e803-4f89-b28c-eb9d269acb88" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/step/assignment3/exceptions/IncompatibleUnitExceptions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/step/assignment3/Length.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/assignment3/Length.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/step/assignment3/LengthUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/assignment3/LengthUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/step/assignment3/Volume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/assignment3/Volume.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/step/assignment3/VolumeUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/assignment3/VolumeUnit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/step/assignment3/LengthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/step/assignment3/LengthTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/com/step/assignment3/VolumeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/step/assignment3/VolumeTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +73,7 @@
       <recent name="com.step.rectangle" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.com.step.assignment3 in bootcamp">
+  <component name="RunManager" selected="JUnit.VolumeTest.addTwoDifferentUnitOfVolume">
     <configuration name="LengthTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
@@ -82,22 +85,6 @@
       <option name="PACKAGE_NAME" value="com.step.assignment3" />
       <option name="MAIN_CLASS_NAME" value="com.step.assignment3.LengthTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LengthTest.addTwoLengthInInches" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.step.assignment3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.step.assignment3" />
-      <option name="MAIN_CLASS_NAME" value="com.step.assignment3.LengthTest" />
-      <option name="METHOD_NAME" value="addTwoLengthInInches" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -118,7 +105,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VolumeTest.compareLitreToGallon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VolumeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -128,13 +115,12 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.step.assignment3" />
       <option name="MAIN_CLASS_NAME" value="com.step.assignment3.VolumeTest" />
-      <option name="METHOD_NAME" value="compareLitreToGallon" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="com.step.assignment3 in bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VolumeTest.addTwoDifferentUnitOfVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -143,18 +129,36 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.step.assignment3" />
-      <option name="TEST_OBJECT" value="package" />
+      <option name="MAIN_CLASS_NAME" value="com.step.assignment3.VolumeTest" />
+      <option name="METHOD_NAME" value="addTwoDifferentUnitOfVolume" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VolumeTest.addTwoVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.step.assignment3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.step.assignment3" />
+      <option name="MAIN_CLASS_NAME" value="com.step.assignment3.VolumeTest" />
+      <option name="METHOD_NAME" value="addTwoVolume" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.com.step.assignment3 in bootcamp" />
-        <item itemvalue="JUnit.LengthTest.throwExceptionInAddWhenUnitsAreDifferent" />
-        <item itemvalue="JUnit.LengthTest.addTwoLengthInInches" />
-        <item itemvalue="JUnit.VolumeTest.compareLitreToGallon" />
+        <item itemvalue="JUnit.VolumeTest.addTwoDifferentUnitOfVolume" />
+        <item itemvalue="JUnit.VolumeTest" />
+        <item itemvalue="JUnit.VolumeTest.addTwoVolume" />
         <item itemvalue="JUnit.LengthTest" />
+        <item itemvalue="JUnit.LengthTest.throwExceptionInAddWhenUnitsAreDifferent" />
       </list>
     </recent_temporary>
   </component>
