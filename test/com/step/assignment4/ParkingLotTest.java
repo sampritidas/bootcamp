@@ -12,4 +12,12 @@ public class ParkingLotTest {
 
         assertTrue(parkingLot.park(Vehicle.CAR));
     }
+
+    @Test
+    public void shouldTellIfParkingLotIsFullOrNot() {
+        final ParkingLot parkingLot = new ParkingLot(1);
+
+        assertFalse(parkingLot.isFull());
+    }
+
 }

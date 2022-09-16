@@ -20,4 +20,8 @@ public class ParkingLot {
         slots.add(car);
         return true;
     }
+
+    public boolean isFull() {
+        return slots.size() == this.maxSlots;
+    }
 }
