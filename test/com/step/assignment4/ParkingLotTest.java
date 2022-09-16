@@ -9,32 +9,33 @@ public class ParkingLotTest {
 
     @Test
     public void shouldParkACarInsideTheParkingLot() throws ExceedsMaxSlotsException {
-        final ParkingLot parkingLot = new ParkingLot(1);
+        final ParkingLot parkingLot = ParkingLot.create(1);
+        final Vehicle car = new Vehicle(1);
 
-        assertTrue(parkingLot.park(Vehicle.CAR));
+        assertTrue(parkingLot.park(car));
     }
 
     @Test
     public void shouldTellIfParkingLotIsNotFull() {
-        final ParkingLot parkingLot = new ParkingLot(1);
+        final ParkingLot parkingLot = ParkingLot.create(1);
 
         assertFalse(parkingLot.isFull());
     }
 
     @Test
     public void shouldTellIfParkingLotIsFull() throws ExceedsMaxSlotsException {
-        final ParkingLot parkingLot = new ParkingLot(1);
-        parkingLot.park(Vehicle.CAR);
+        final ParkingLot parkingLot = ParkingLot.create(1);
+        parkingLot.park(new Vehicle(1));
 
         assertTrue(parkingLot.isFull());
     }
 
     @Test
     public void shouldThrowExceedsMaxSlotsExceptionWhenParkingLotIsFull() throws ExceedsMaxSlotsException {
-        final ParkingLot parkingLot = new ParkingLot(1);
+        final ParkingLot parkingLot = ParkingLot.create(1);
 
-        parkingLot.park(Vehicle.CAR);
+        parkingLot.park(new Vehicle(1));
 
-        assertThrows(ExceedsMaxSlotsException.class, () -> parkingLot.park(Vehicle.CAR));
+        assertThrows(ExceedsMaxSlotsException.class, () -> parkingLot.park(new Vehicle(2)));
     }
 }

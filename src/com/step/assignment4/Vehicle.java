@@ -1,5 +1,9 @@
 package com.step.assignment4;
 
-public enum Vehicle {
-    CAR;
+public class Vehicle {
+    private int id;
+
+    public Vehicle(int id) {
+        this.id = id;
+    }
 }

@@ -1,0 +1,21 @@
+package com.step.assignment4;
+
+import org.junit.Test;
+
+import java.util.ArrayList;
+
+public class ParkingLotsTest {
+    @Test
+    public void shouldParkACarParkingLots() {
+        final ParkingLot parkingLot1 = ParkingLot.create(2);
+        final ParkingLot parkingLot2 = ParkingLot.create(3);
+        final ArrayList<ParkingLot> parkingLotList = new ArrayList<>();
+        parkingLotList.add(parkingLot1);
+        parkingLotList.add(parkingLot2);
+
+        final ParkingLots parkingLots = new ParkingLots(parkingLotList);
+        final Vehicle car = new Vehicle(1);
+
+        parkingLots.park(car);
+    }
+}
