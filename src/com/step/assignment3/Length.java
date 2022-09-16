@@ -1,30 +1,44 @@
 package com.step.assignment3;
 
+import com.step.assignment3.exceptions.InvalidMeasurementException;
+
 import java.util.Objects;
 
 public class Length {
-    private final double number;
+    private final double value;
     private final LengthUnit unit;
 
-    public Length(double number, LengthUnit unit) {
-        this.number = number;
+    private Length(double value, LengthUnit unit) {
+        this.value = value;
         this.unit = unit;
     }
 
-    public Length convertToInch() {
-        double value = unit.inches * number;
-        return new Length(value, LengthUnit.INCH);
+    public static Length create(double value, LengthUnit unit) throws InvalidMeasurementException {
+        if (value < 0) {
+            throw new InvalidMeasurementException(value);
+        }
+        return new Length(value, unit);
     }
 
-    public boolean compare(Length newLength) {
+    public Length convertToInch() throws InvalidMeasurementException {
+        double value = unit.inches * this.value;
+        return create(value, LengthUnit.INCH);
+    }
+
+    public Rank compare(Length newLength) throws InvalidMeasurementException {
         Length convertedNewLength = newLength.convertToInch();
-        return convertToInch().equals(convertedNewLength);
+        Length thisLengthInInch = this.convertToInch();
+
+        if (thisLengthInInch.value == convertedNewLength.value) {
+            return Rank.EQUAL;
+        }
+        return thisLengthInInch.value > convertedNewLength.value ? Rank.LESSER : Rank.GREATER;
     }
 
-    public Length add(Length newLength) {
+    public Length add(Length newLength) throws InvalidMeasurementException {
         Length newLengthInInch = newLength.convertToInch();
         Length thisInInch = this.convertToInch();
-        return new Length(thisInInch.number + newLengthInInch.number, LengthUnit.INCH);
+        return create(thisInInch.value + newLengthInInch.value, LengthUnit.INCH);
     }
 
     @Override
@@ -32,11 +46,11 @@ public class Length {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Length length = (Length) o;
-        return Double.compare(length.number, number) == 0 && Objects.equals(unit, length.unit);
+        return Double.compare(length.value, value) == 0 && Objects.equals(unit, length.unit);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(number, unit);
+        return Objects.hash(value, unit);
     }
 }

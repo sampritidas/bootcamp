@@ -16,9 +16,13 @@ public class Volume {
         return new Volume(newValue, VolumeUnit.LITER);
     }
 
-    public boolean compare(Volume newVolume) {
+    public Rank compare(Volume newVolume) {
         Volume convertedVolumeInLitre = newVolume.convertToLitre();
-        return convertToLitre().equals(convertedVolumeInLitre);
+        Volume thisVolumeInLitre = this.convertToLitre();
+        if (thisVolumeInLitre.value == convertedVolumeInLitre.value) {
+            return Rank.EQUAL;
+        }
+        return thisVolumeInLitre.value > convertedVolumeInLitre.value ? Rank.LESSER : Rank.GREATER;
     }
 
     @Override

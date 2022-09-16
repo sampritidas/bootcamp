@@ -7,11 +7,19 @@ import static org.junit.Assert.*;
 public class VolumeTest {
 
     @Test
-    public void compareLitreToGallon() {
+    public void compareLitreToGallonWhenBothAreEqual() {
         final Volume volumeInGallon = new Volume(1, VolumeUnit.GALLON);
         final Volume volumeInLitre = new Volume(3.78, VolumeUnit.LITER);
 
-        assertTrue(volumeInGallon.compare(volumeInLitre));
+        assertEquals(volumeInGallon.compare(volumeInLitre), Rank.EQUAL);
+    }
+
+    @Test
+    public void compareLitreToGallonWhenBothAreNotEqual() {
+        final Volume volumeInGallon = new Volume(2, VolumeUnit.GALLON);
+        final Volume volumeInLitre = new Volume(3.78, VolumeUnit.LITER);
+
+        assertEquals(volumeInGallon.compare(volumeInLitre), Rank.LESSER);
     }
 
     @Test

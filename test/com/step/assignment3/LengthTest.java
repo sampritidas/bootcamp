@@ -1,6 +1,6 @@
 package com.step.assignment3;
 
-import com.step.assignment3.exceptions.IncompatibleUnitExceptions;
+import com.step.assignment3.exceptions.InvalidMeasurementException;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -8,44 +8,44 @@ import static org.junit.Assert.*;
 public class LengthTest {
 
     @Test
-    public void compareOfFeetToSameFeet() {
-        final Length feet1 = new Length(10, LengthUnit.FEET);
-        final Length feet2 = new Length(10, LengthUnit.FEET);
+    public void compareOfFeetToSameFeet() throws InvalidMeasurementException {
+        final Length feet1 = Length.create(10, LengthUnit.FEET);
+        final Length feet2 = Length.create(10, LengthUnit.FEET);
 
-        assertTrue(feet1.compare(feet2));
+        assertEquals(feet1.compare(feet2), Rank.EQUAL);
     }
 
     @Test
-    public void compareFeetToInches() {
-        final Length lengthInFeet = new Length(1, LengthUnit.FEET);
-        final Length lengthInInch = new Length(12, LengthUnit.INCH);
+    public void compareFeetToInches() throws InvalidMeasurementException {
+        final Length lengthInFeet = Length.create(1, LengthUnit.FEET);
+        final Length lengthInInch = Length.create(12, LengthUnit.INCH);
 
-        assertTrue(lengthInFeet.compare(lengthInInch));
+        assertEquals(lengthInFeet.compare(lengthInInch), Rank.EQUAL);
     }
 
     @Test
-    public void compareInchToCm() {
-        final Length lengthInInch = new Length(2, LengthUnit.INCH);
-        final Length lengthInCm = new Length(5, LengthUnit.CM);
+    public void compareInchToCm() throws InvalidMeasurementException {
+        final Length lengthInInch = Length.create(2, LengthUnit.INCH);
+        final Length lengthInCm = Length.create(5, LengthUnit.CM);
 
-        assertTrue(lengthInInch.compare(lengthInCm));
+        assertEquals(lengthInInch.compare(lengthInCm), Rank.EQUAL);
     }
 
     @Test
-    public void addTwoLengthInInches() throws IncompatibleUnitExceptions {
-        final Length length1 = new Length(2, LengthUnit.INCH);
-        final Length length2 = new Length(2, LengthUnit.INCH);
+    public void addTwoLengthInInches() throws InvalidMeasurementException {
+        final Length length1 = Length.create(2, LengthUnit.INCH);
+        final Length length2 = Length.create(2, LengthUnit.INCH);
 
         Length newLength = length1.add(length2);
-        assertTrue(newLength.equals(new Length(4, LengthUnit.INCH)));
+        assertTrue(newLength.equals(Length.create(4, LengthUnit.INCH)));
     }
 
     @Test
-    public void throwExceptionInAddWhenUnitsAreDifferent() throws IncompatibleUnitExceptions {
-        final Length length1 = new Length(2, LengthUnit.INCH);
-        final Length length2 = new Length(2.5, LengthUnit.CM);
+    public void throwExceptionInAddWhenUnitsAreDifferent() throws InvalidMeasurementException {
+        final Length length1 = Length.create(2, LengthUnit.INCH);
+        final Length length2 = Length.create(2.5, LengthUnit.CM);
 
         Length newAddedLength = length1.add(length2);
-        assertTrue(newAddedLength.equals(new Length(3, LengthUnit.INCH)));
+        assertTrue(newAddedLength.equals(Length.create(3, LengthUnit.INCH)));
     }
 }

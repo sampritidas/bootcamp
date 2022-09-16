@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="acdf57b8-e803-4f89-b28c-eb9d269acb88" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/step/assignment3/Rank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/step/assignment3/Temperature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/step/assignment3/TemperatureUnit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/step/assignment3/exceptions/InvalidMeasurementException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/com/step/assignment3/TemperatureTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/step/assignment3/Length.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/assignment3/Length.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/step/assignment3/LengthUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/assignment3/LengthUnit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/step/assignment3/Volume.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/assignment3/Volume.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/step/assignment3/VolumeUnit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/step/assignment3/VolumeUnit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/step/assignment3/exceptions/IncompatibleUnitExceptions.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/step/assignment3/LengthTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/step/assignment3/LengthTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/com/step/assignment3/VolumeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/test/com/step/assignment3/VolumeTest.java" afterDir="false" />
     </list>
@@ -18,9 +22,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="JUnit4 Test Class" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -73,7 +77,7 @@
       <recent name="com.step.rectangle" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.VolumeTest.addTwoDifferentUnitOfVolume">
+  <component name="RunManager" selected="JUnit.VolumeTest.compareLitreToGallonWhenBothAreEqual">
     <configuration name="LengthTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
@@ -89,7 +93,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LengthTest.throwExceptionInAddWhenUnitsAreDifferent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TemperatureTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -98,8 +102,23 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.step.assignment3" />
-      <option name="MAIN_CLASS_NAME" value="com.step.assignment3.LengthTest" />
-      <option name="METHOD_NAME" value="throwExceptionInAddWhenUnitsAreDifferent" />
+      <option name="MAIN_CLASS_NAME" value="com.step.assignment3.TemperatureTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TemperatureTest.compareTempInCelciusWithFahrenheit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.step.assignment3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.step.assignment3" />
+      <option name="MAIN_CLASS_NAME" value="com.step.assignment3.TemperatureTest" />
+      <option name="METHOD_NAME" value="compareTempInCelciusWithFahrenheit" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -120,7 +139,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VolumeTest.addTwoDifferentUnitOfVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VolumeTest.compareLitreToGallonWhenBothAreEqual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -130,23 +149,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.step.assignment3" />
       <option name="MAIN_CLASS_NAME" value="com.step.assignment3.VolumeTest" />
-      <option name="METHOD_NAME" value="addTwoDifferentUnitOfVolume" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VolumeTest.addTwoVolume" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.step.assignment3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.step.assignment3" />
-      <option name="MAIN_CLASS_NAME" value="com.step.assignment3.VolumeTest" />
-      <option name="METHOD_NAME" value="addTwoVolume" />
+      <option name="METHOD_NAME" value="compareLitreToGallonWhenBothAreEqual" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -154,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.VolumeTest.addTwoDifferentUnitOfVolume" />
-        <item itemvalue="JUnit.VolumeTest" />
-        <item itemvalue="JUnit.VolumeTest.addTwoVolume" />
+        <item itemvalue="JUnit.VolumeTest.compareLitreToGallonWhenBothAreEqual" />
         <item itemvalue="JUnit.LengthTest" />
-        <item itemvalue="JUnit.LengthTest.throwExceptionInAddWhenUnitsAreDifferent" />
+        <item itemvalue="JUnit.TemperatureTest" />
+        <item itemvalue="JUnit.TemperatureTest.compareTempInCelciusWithFahrenheit" />
+        <item itemvalue="JUnit.VolumeTest" />
       </list>
     </recent_temporary>
   </component>
