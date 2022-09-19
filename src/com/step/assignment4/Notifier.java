@@ -1,29 +1,26 @@
 package com.step.assignment4;
 
-
-import java.util.ArrayList;
-
 public class Notifier {
 
     public void notify(ParkingState state) {
         double percentage = state.getOccupiedPercentage();
 
         if (percentage == 100) {
-            this.inform(Subscribers.ASSISTANT, state);
-            this.inform(Subscribers.ATTENDANT, state);
+            this.inform(Subscriber.ASSISTANT, state);
+            this.inform(Subscriber.ATTENDANT, state);
         }
 
         if (percentage >= 80) {
-            this.inform(Subscribers.MANAGER, state);
-            this.inform(Subscribers.CIVIC_BODY, state);
+            this.inform(Subscriber.MANAGER, state);
+            this.inform(Subscriber.CIVIC_BODY, state);
         }
 
         if (percentage <= 20) {
-            this.inform(Subscribers.ASSISTANT, state);
+            this.inform(Subscriber.ASSISTANT, state);
         }
     }
 
-    private void inform(Subscribers subscribers, ParkingState state) {
+    private void inform(Subscriber subscribers, ParkingState state) {
         subscribers.inform(state);
     }
 }

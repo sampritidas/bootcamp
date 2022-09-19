@@ -2,7 +2,7 @@ package com.step.assignment4;
 
 import java.util.ArrayList;
 
-public enum Subscribers {
+public enum Subscriber {
     MANAGER, ATTENDANT, ASSISTANT, CIVIC_BODY;
 
     private final ArrayList<ParkingState> notifications = new ArrayList<>();
