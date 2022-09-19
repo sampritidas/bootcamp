@@ -1,32 +1,31 @@
 package com.step.assignment5;
 
+import com.step.assignment5.exceptions.IncompatibleAdditionException;
+import com.step.assignment5.exceptions.MaximumBagCapacityExceedException;
+import com.step.assignment5.exceptions.MaximumColourExceedsException;
+
 import java.util.ArrayList;
 
 public class Bag {
 
     private final int maxCapacity;
+    private Validator validator;
     private final ArrayList<Ball> balls;
 
     public Bag(int maxCapacity) {
         this.maxCapacity = maxCapacity;
         this.balls = new ArrayList<Ball>();
+        this.validator = new Validator(balls, maxCapacity);
     }
 
-    public void add(Ball ball) throws MaximumColourExceedsException {
+    public void add(Ball ball) throws MaximumColourExceedsException, MaximumBagCapacityExceedException, IncompatibleAdditionException {
         if (maxCapacity == balls.size()) {
-            return;
+            throw new MaximumBagCapacityExceedException();
         }
 
-        if (!(ballCount("green") < 3)) {
-            throw new MaximumColourExceedsException("green", ballCount("green"));
-        }
+        this.validator.validate(ball);
         balls.add(ball);
     }
 
-    private int ballCount(String color) {
-        return (int) this.balls.stream()
-                .filter(ball -> ball.getColor() == color)
-                .count();
-    }
 
 }
