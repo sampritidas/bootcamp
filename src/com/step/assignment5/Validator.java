@@ -8,11 +8,9 @@ import java.util.ArrayList;
 
 public class Validator {
     private final ArrayList<Ball> balls;
-    private final int maxCapacity;
 
-    public Validator(ArrayList<Ball> balls, int maxCapacity) {
+    public Validator(ArrayList<Ball> balls) {
         this.balls = balls;
-        this.maxCapacity = maxCapacity;
     }
 
     private int ballCount(BallColor colour) {
@@ -43,17 +41,9 @@ public class Validator {
         }
     }
 
-//    private boolean contains ( )
-
-    private void isAlreadyPresent(BallColor colour) throws DissonantException {
-        if (this.balls.contains(new Ball(colour))) {
-            throw new DissonantException(colour);
-        }
-    }
-
-    private void validateYellow() throws IncompatibleAdditionException {
-        if ((balls.size() + 1) * 0.4 < ballCount(BallColor.YELLOW) + 1) {
-            throw new IncompatibleAdditionException();
+    private void validateGreen() throws MaximumColourExceedsException {
+        if (!(ballCount(BallColor.GREEN) < 3)) {
+            throw new MaximumColourExceedsException(BallColor.GREEN, ballCount(BallColor.GREEN));
         }
     }
 
@@ -63,9 +53,19 @@ public class Validator {
         }
     }
 
-    private void validateGreen() throws MaximumColourExceedsException {
-        if (!(ballCount(BallColor.GREEN) < 3)) {
-            throw new MaximumColourExceedsException(BallColor.GREEN, ballCount(BallColor.GREEN));
+    private void validateYellow() throws IncompatibleAdditionException {
+        if (isWithin40Percent(BallColor.YELLOW)) {
+            throw new IncompatibleAdditionException();
+        }
+    }
+
+    private boolean isWithin40Percent(BallColor colour) {
+        return (this.balls.size() + 1) * 0.4 < ballCount(colour) + 1;
+    }
+
+    private void isAlreadyPresent(BallColor colour) throws DissonantException {
+        if (this.balls.contains(new Ball(colour))) {
+            throw new DissonantException(colour);
         }
     }
 }

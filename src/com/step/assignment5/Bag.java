@@ -16,7 +16,7 @@ public class Bag {
     public Bag(int maxCapacity) {
         this.maxCapacity = maxCapacity;
         this.balls = new ArrayList<Ball>();
-        this.validator = new Validator(balls, maxCapacity);
+        this.validator = new Validator(balls);
     }
 
     public void add(Ball ball) throws MaximumColourExceedsException, MaximumBagCapacityExceedException, IncompatibleAdditionException, DissonantException {
