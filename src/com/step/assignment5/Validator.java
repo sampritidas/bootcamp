@@ -1,5 +1,6 @@
 package com.step.assignment5;
 
+import com.step.assignment5.exceptions.DissonantException;
 import com.step.assignment5.exceptions.IncompatibleAdditionException;
 import com.step.assignment5.exceptions.MaximumColourExceedsException;
 
@@ -20,7 +21,7 @@ public class Validator {
                 .count();
     }
 
-    public void validate(Ball ball) throws MaximumColourExceedsException, IncompatibleAdditionException {
+    public void validate(Ball ball) throws MaximumColourExceedsException, IncompatibleAdditionException, DissonantException {
         if (ball.getColour() == BallColor.GREEN) {
             validateGreen();
         }
@@ -32,10 +33,26 @@ public class Validator {
         if (ball.getColour() == BallColor.YELLOW) {
             validateYellow();
         }
+
+        if (ball.getColour() == BallColor.BLUE) {
+            isAlreadyPresent(BallColor.BLACK);
+        }
+
+        if (ball.getColour() == BallColor.BLACK) {
+            isAlreadyPresent(BallColor.BLUE);
+        }
+    }
+
+//    private boolean contains ( )
+
+    private void isAlreadyPresent(BallColor colour) throws DissonantException {
+        if (this.balls.contains(new Ball(colour))) {
+            throw new DissonantException(colour);
+        }
     }
 
     private void validateYellow() throws IncompatibleAdditionException {
-        if (balls.size() * 0.4 > ballCount(BallColor.YELLOW)) {
+        if ((balls.size() + 1) * 0.4 < ballCount(BallColor.YELLOW) + 1) {
             throw new IncompatibleAdditionException();
         }
     }

@@ -1,5 +1,6 @@
 package com.step.assignment5;
 
+import com.step.assignment5.exceptions.DissonantException;
 import com.step.assignment5.exceptions.IncompatibleAdditionException;
 import com.step.assignment5.exceptions.MaximumBagCapacityExceedException;
 import com.step.assignment5.exceptions.MaximumColourExceedsException;
@@ -18,7 +19,7 @@ public class Bag {
         this.validator = new Validator(balls, maxCapacity);
     }
 
-    public void add(Ball ball) throws MaximumColourExceedsException, MaximumBagCapacityExceedException, IncompatibleAdditionException {
+    public void add(Ball ball) throws MaximumColourExceedsException, MaximumBagCapacityExceedException, IncompatibleAdditionException, DissonantException {
         if (maxCapacity == balls.size()) {
             throw new MaximumBagCapacityExceedException();
         }
@@ -26,6 +27,4 @@ public class Bag {
         this.validator.validate(ball);
         balls.add(ball);
     }
-
-
 }
